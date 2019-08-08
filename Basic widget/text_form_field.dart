@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(TextFormFieldExample());
+}
+
 class TextFormFieldExample extends StatelessWidget {
 
   @override
