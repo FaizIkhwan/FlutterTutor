@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Main());
+  runApp(MyApp());
 }
 
-class Main extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,9 +14,9 @@ class Main extends StatelessWidget {
             "Text widget!!!",
             textDirection: TextDirection.ltr, // left to right
             style: TextStyle(
-              color: Colors.deepPurple,
-              fontSize: 36.0,
-              fontWeight: FontWeight.bold
+                color: Colors.deepPurple,
+                fontSize: 36.0,
+                fontWeight: FontWeight.bold
             ),
           ), // end container
         ), // end center

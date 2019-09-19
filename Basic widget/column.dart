@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Main());
+  runApp(MyApp());
 }
 
-class Main extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,47 +21,17 @@ class Main extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
 
-                Row(
-                  // Horizontal alignment
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
+                Text("1"),
 
-                    Text("Description"),
+                Text("2"),
 
-                    RaisedButton(
-                      child: Text("Button"),
-                    ),
+                Text("3"),
 
-                  ],
-                ), // end row
+                Text("4"),
 
-                Row(
-                  // Horizontal alignment
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
+                Text("5"),
 
-                    Text("Description"),
-
-                    RaisedButton(
-                      child: Text("Button"),
-                    ),
-
-                  ],
-                ), // end row,
-
-                Row(
-                  // Horizontal alignment
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-
-                    Text("Description"),
-
-                    RaisedButton(
-                      child: Text("Button"),
-                    ),
-
-                  ],
-                ) // end row,
+                Text("6"),
 
               ],
             ), // end column
@@ -66,4 +41,3 @@ class Main extends StatelessWidget {
     ); // end materialapp
   }
 }
-
